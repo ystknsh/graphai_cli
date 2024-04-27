@@ -1,0 +1,60 @@
+{
+  "name": "graphai_cli",
+  "version": "0.0.1",
+  "description": "GraphAI command line tools.",
+  "main": "lib/graphai_cli.js",
+  "bin": {
+    "graphai": "lib/graphai_cli.js"
+  },
+  "files": [
+    "./lib"
+  ],
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "eslint": "eslint --fix --ext .ts ./src ./tests ./samples",
+    "format": "prettier --write '{src,tests,samples}/**/*.ts' .eslintrc.js",
+    "test": "node --test  -r tsconfig-paths/register --require ts-node/register ./tests/**/test_*.ts",
+    "cli": "npx ts-node  -r tsconfig-paths/register ./src/graphai_cli.ts",
+    "b": "yarn run format && yarn run eslint && yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/receptron/graphai_cli"
+  },
+  "author": "Receptron team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/receptron/graphai_cli/issues"
+  },
+  "homepage": "https://github.com/receptron/graphai_cli#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.8.7",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-plugin-import": "^2.25.2",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^5.0.0",
+    "arxiv-api-ts": "^1.0.3",
+    "deepmerge": "^4.3.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "graphai": "https://github.com/snakajima/graphai.git",
+    "openai": "^4.12.4",
+    "slashgpt": "^0.0.8",
+    "tiktoken": "^1.0.14",
+    "wikipedia": "^2.1.2",
+    "yaml": "^2.3.3"
+  },
+  "types": "./lib/graphai_cli.d.ts",
+  "directories": {
+    "lib": "lib"
+  }
+}
