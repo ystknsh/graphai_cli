@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { GraphAI, AgentFunction } from "graphai";
+import { GraphAI } from "graphai";
 import * as agents from "graphai/lib/experimental_agents";
 
 import fs from "fs";
