@@ -24,5 +24,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: yarn install
+    - run: yarn run build
     - run: yarn run eslint
     - run: node lib/graphai_cli.js test_yaml/test_base.yml
