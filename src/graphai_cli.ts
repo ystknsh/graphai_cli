@@ -7,10 +7,6 @@ import fs from "fs";
 import path from "path";
 import YAML from "yaml";
 
-const testAgent: AgentFunction<{ delay: number; fail: boolean }> = async () => {
-  return {};
-};
-
 const main = async () => {
   const file = process.argv[2];
   if (file === undefined) {
