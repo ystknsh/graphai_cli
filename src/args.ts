@@ -29,8 +29,8 @@ export const args = yargs
     demandOption: false,
     type: "string",
   })
-  .command(hasOption ? "* [yaml_file]" : "* <yaml_file>", "run GraphAI with yaml GraphAI file.")
-  .positional("yaml_file", {
+  .command(hasOption ? "* [yaml_or_json_file]" : "* <yaml_or_json_file>", "run GraphAI with GraphAI file.")
+  .positional("yaml_or_json_file", {
     describe: "yaml or json file",
     type: "string",
     demandOption: hasOption,
