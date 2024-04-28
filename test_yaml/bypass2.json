@@ -1,0 +1,37 @@
+{
+  "nodes": {
+    "echo": {
+      "agentId": "echoAgent",
+      "params": {
+        "message": [
+          "hello",
+          "hello"
+        ]
+      }
+    },
+    "mapNode": {
+      "agentId": "mapAgent",
+      "inputs": [
+        "echo.message"
+      ],
+      "graph": {
+        "nodes": {
+          "bypassAgent": {
+            "agentId": "bypassAgent",
+            "inputs": [
+              "$0"
+            ],
+            "isResult": true
+          }
+        }
+      }
+    },
+    "bypassAgent2": {
+      "agentId": "bypassAgent",
+      "inputs": [
+        "mapNode.bypassAgent"
+      ],
+      "isResult": true
+    }
+  }
+}
