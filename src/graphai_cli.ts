@@ -4,15 +4,13 @@ import { GraphAI } from "graphai";
 import { AgentFunctionDictonary } from "graphai/lib/type";
 import * as packages from "graphai/lib/experimental_agents/packages";
 
-import { callbackLog } from "./utils";
-
-import yargs from "yargs";
 
 import fs from "fs";
 import path from "path";
-import YAML from "yaml";
 
 import { hasOption, args } from "./args";
+import { callbackLog } from "./utils";
+import { readGraphaiData } from "./file_utils";
 
 const main = async () => {
   if (hasOption) {
@@ -26,8 +24,7 @@ const main = async () => {
     return;
   }
   try {
-    const graph_data_file = fs.readFileSync(file_path, "utf8");
-    const graph_data = YAML.parse(graph_data_file);
+    const graph_data = readGraphaiData(file_path);
 
     const agents = Object.entries(packages).reduce((tmp: AgentFunctionDictonary, current) => {
       const [k, v] = current
