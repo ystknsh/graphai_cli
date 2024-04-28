@@ -7,6 +7,7 @@ export const option = (args: Arguments, packages: Record<string, AgentFunctionIn
     console.log(
       Object.entries(packages)
         .map(([k, v]) => "* " + k + " - " + v.description)
+        .sort()
         .join("\n"),
     );
   };
