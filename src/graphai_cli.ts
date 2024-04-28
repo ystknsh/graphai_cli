@@ -2,17 +2,18 @@
 
 import { GraphAI } from "graphai";
 import * as agents from "graphai/lib/experimental_agents";
+import yargs from 'yargs';
 
 import fs from "fs";
 import path from "path";
 import YAML from "yaml";
 
+const args = yargs
+  .command("* <yaml_file>", "run GraphAI with yaml GraphAI file.")
+  .parseSync()
+
 const main = async () => {
-  const file = process.argv[2];
-  if (file === undefined) {
-    console.log("no file");
-    return;
-  }
+  const file = args.yaml_file;
   const file_path = path.resolve(process.cwd() + "/" + file);
   if (!fs.existsSync(file_path)) {
     console.log("no file");
