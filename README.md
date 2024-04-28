@@ -2,6 +2,22 @@
 
 graphai command line tool
 
+## Usage
+
+```
+graphai_cli.ts <yaml_file>
+
+run GraphAI with yaml GraphAI file.
+
+Options:
+      --help     Show help                                             [boolean]
+      --version  Show version number                                   [boolean]
+  -l, --list     agents list
+  -s, --sample   agents list
+  -d, --detail   agent detail                                           [string]
+  -v, --verbose  verbose log               [boolean] [required] [default: false]
+```
+
 ### Run graphai
 
 ```
