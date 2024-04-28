@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
 import { GraphAI } from "graphai";
-import { NodeState } from "graphai/lib/type";
-import * as agents from "graphai/lib/experimental_agents";
+import { AgentFunctionDictonary } from "graphai/lib/type";
 import * as packages from "graphai/lib/experimental_agents/packages";
+
+import { callbackLog } from "./utils";
+
 import yargs from "yargs";
 
 import fs from "fs";
@@ -51,21 +53,16 @@ const main = async () => {
     const graph_data_file = fs.readFileSync(file_path, "utf8");
     const graph_data = YAML.parse(graph_data_file);
 
+    const agents = Object.entries(packages).reduce((tmp: AgentFunctionDictonary, current) => {
+      const [k, v] = current
+      tmp[v.name] = v.agent
+      // console.log(v.name)
+      return tmp;
+    }, {})
     const graph = new GraphAI(graph_data, agents);
 
     if (args.verbose) {
-      graph.onLogCallback = ({ nodeId, state, inputs, result, errorMessage }) => {
-        if (state === NodeState.Executing) {
-          console.log(`${nodeId.padEnd(10)} =>( ${(JSON.stringify(inputs) ?? "").slice(0, 60)}`);
-        } else if (state === NodeState.Injected || state == NodeState.Completed) {
-          const shortName = state === NodeState.Injected ? "=  " : "{} ";
-          console.log(`${nodeId.padEnd(10)} ${shortName} ${(JSON.stringify(result) ?? "").slice(0, 60)}`);
-        } else if (state == NodeState.Failed) {
-          console.log(`${nodeId.padEnd(10)} ERR ${(errorMessage ?? "").slice(0, 60)}`);
-        } else {
-          console.log(`${nodeId.padEnd(10)} ${state}`);
-        }
-      };
+      graph.onLogCallback = callbackLog;
     }
     const results = await graph.run();
     console.log(results);
