@@ -10,6 +10,7 @@ export const args = yargs
   .option("sample", {
     alias: "s",
     description: "agents list",
+    type: "string",
   })
   .option("d", {
     alias: "detail",
@@ -23,5 +24,15 @@ export const args = yargs
     default: false,
     type: "boolean",
   })
+  .option("log", {
+    description: "output log",
+    demandOption: false,
+    type: "string",
+  })
   .command(hasOption ? "* [yaml_file]" : "* <yaml_file>", "run GraphAI with yaml GraphAI file.")
+  .positional("yaml_file", {
+    describe: "yaml or json file",
+    type: "string",
+    demandOption: hasOption,
+  })
   .parseSync();

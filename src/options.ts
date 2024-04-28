@@ -10,7 +10,7 @@ export const option = (args: Arguments, packages: Record<string, AgentFunctionIn
         .join("\n"),
     );
   };
-  
+
   const getAgent = (agentId: string) => {
     return Object.entries(packages).find(([k, v]) => k === agentId);
   };
@@ -30,14 +30,14 @@ export const option = (args: Arguments, packages: Record<string, AgentFunctionIn
   const sample = () => {
     const agent = getAgent(args.sample as string);
     if (!agent) {
-      console.log("no agent: " + args.detail);
+      console.log("no agent: " + args.sample);
       return;
     }
     const detail = agent[1];
     console.log("* " + agent[0]);
     console.log(JSON.stringify(detail.samples, null, 2));
   };
-  
+
   if (args.list) {
     list();
   }
