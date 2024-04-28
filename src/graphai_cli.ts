@@ -21,7 +21,7 @@ const main = async () => {
     option(args, packages);
     return;
   }
-  const file_path = fileFullPath(args.yaml_file as string);
+  const file_path = fileFullPath(args.yaml_or_json_file as string);
   if (!fs.existsSync(file_path)) {
     console.log("no file exist: " + file_path);
     return;
