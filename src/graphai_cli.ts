@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { GraphAI } from "graphai";
+import { NodeState } from "graphai/lib/type";
 import * as agents from "graphai/lib/experimental_agents";
 import * as packages from "graphai/lib/experimental_agents/packages";
 import yargs from "yargs";
@@ -25,6 +26,13 @@ const args = yargs
     describe: "agent detail",
     type: "string",
   })
+  .option("v", {
+    alias: "verbose",
+    describe: "verbose log",
+    demandOption: true,
+    default: false,
+    type: "boolean",
+  })
   .command(hasOption ? "* [yaml_file]" : "* <yaml_file>", "run GraphAI with yaml GraphAI file.")
   .parseSync();
 
@@ -44,6 +52,21 @@ const main = async () => {
     const graph_data = YAML.parse(graph_data_file);
 
     const graph = new GraphAI(graph_data, agents);
+
+    if (args.verbose) {
+      graph.onLogCallback = ({ nodeId, state, inputs, result, errorMessage }) => {
+        if (state === NodeState.Executing) {
+          console.log(`${nodeId.padEnd(10)} =>( ${(JSON.stringify(inputs) ?? "").slice(0, 60)}`);
+        } else if (state === NodeState.Injected || state == NodeState.Completed) {
+          const shortName = state === NodeState.Injected ? "=  " : "{} ";
+          console.log(`${nodeId.padEnd(10)} ${shortName} ${(JSON.stringify(result) ?? "").slice(0, 60)}`);
+        } else if (state == NodeState.Failed) {
+          console.log(`${nodeId.padEnd(10)} ERR ${(errorMessage ?? "").slice(0, 60)}`);
+        } else {
+          console.log(`${nodeId.padEnd(10)} ${state}`);
+        }
+      };
+    }
     const results = await graph.run();
     console.log(results);
   } catch (e) {
