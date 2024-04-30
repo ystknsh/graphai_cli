@@ -3,6 +3,7 @@
 import { GraphAI } from "graphai";
 import { AgentFunctionDictonary } from "graphai/lib/type";
 import * as packages from "graphai/lib/experimental_agents/packages";
+import "dotenv/config";
 
 import fs from "fs";
 import path from "path";
@@ -43,8 +44,12 @@ const main = async () => {
     if (args.verbose) {
       graph.onLogCallback = callbackLog;
     }
-    const results = await graph.run();
-    console.log(results);
+    try {
+      const results = await graph.run();
+      console.log(results);
+    } catch (e) {
+      console.log("error", e);
+    }
 
     if (args.log) {
       const logfile = fileFullPath(args.log);

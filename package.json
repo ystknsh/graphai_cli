@@ -1,6 +1,6 @@
 {
-  "name": "graphai_cli",
-  "version": "0.0.4",
+  "name": "@receptron/graphai_cli",
+  "version": "0.2.0",
   "description": "GraphAI command line tools.",
   "main": "lib/graphai_cli.js",
   "bin": {
@@ -47,7 +47,7 @@
     "deepmerge": "^4.3.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "graphai": "0.2.0",
+    "graphai": "^0.2.0",
     "openai": "^4.12.4",
     "slashgpt": "^0.0.8",
     "tiktoken": "^1.0.14",

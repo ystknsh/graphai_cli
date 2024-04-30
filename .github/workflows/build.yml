@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  builr:
+  build:
     runs-on: ubuntu-latest
     if: github.repository_owner == 'receptron'
     strategy:
