@@ -2,6 +2,10 @@
 
 graphai command line tool
 
+## Install
+
+npm i -g  @receptron/graphai_cli
+
 ## Usage
 
 ```
