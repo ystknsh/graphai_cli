@@ -9,7 +9,7 @@ export const args = yargs
   })
   .option("sample", {
     alias: "s",
-    description: "agents list",
+    description: "agent sample data",
     type: "string",
   })
   .option("d", {

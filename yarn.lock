@@ -1542,8 +1542,10 @@ gopd@^1.0.1:
   dependencies:
     get-intrinsic "^1.1.3"
 
-graphai@../graphai:
-  version "0.1.1"
+graphai@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/graphai/-/graphai-0.2.0.tgz#5993b2b45b52380915550442e0948a56a9315ab4"
+  integrity sha512-D6yMB9xk8n9HrgyYP9eT9n2pN0gg6qaYDWx7hTzaYkEg/+zepBb92lx3dsH7JimzaeEggadFrfUmudtiOWKONQ==
 
 graphemer@^1.4.0:
   version "1.4.0"
