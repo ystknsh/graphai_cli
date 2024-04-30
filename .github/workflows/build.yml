@@ -27,7 +27,7 @@ jobs:
         git add lib/*
     - name: Commit 
       run: |
-        if [ $(git diff --name-only | wc -l) != 0 ]; then
+        if [ $(git diff --name-only --cached | wc -l) != 0 ]; then
           git commit -m "Update lib"
           git push origin main
         else
