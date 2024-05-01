@@ -12,6 +12,7 @@ import { hasOption, args } from "./args";
 import { callbackLog } from "./utils";
 import { readGraphaiData, mkdirLogDir } from "./file_utils";
 import { option } from "./options";
+import { mermaid } from "./mermaid";
 
 const fileFullPath = (file: string) => {
   return path.resolve(process.cwd() + "/" + file) || "";
@@ -33,6 +34,11 @@ const main = async () => {
   }
   try {
     const graph_data = readGraphaiData(file_path);
+
+    if (args.mermaid) {
+      mermaid(graph_data);
+      return;
+    }
 
     const agents = Object.entries(packages).reduce((tmp: AgentFunctionDictonary, current) => {
       const [k, v] = current;

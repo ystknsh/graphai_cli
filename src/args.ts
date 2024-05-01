@@ -24,6 +24,13 @@ export const args = yargs
     default: false,
     type: "boolean",
   })
+  .option("m", {
+    alias: "mermaid",
+    describe: "mermaid",
+    demandOption: true,
+    default: false,
+    type: "boolean",
+  })
   .option("log", {
     description: "output log",
     demandOption: false,
