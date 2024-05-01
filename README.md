@@ -4,7 +4,9 @@ graphai command line tool
 
 ## Install 🚀
 
+```sh
 npm i -g  @receptron/graphai_cli
+```
 
 ## Usage
 
@@ -20,9 +22,12 @@ Options:
       --help     Show help                                             [boolean]
       --version  Show version number                                   [boolean]
   -l, --list     agents list
-  -s, --sample   agents list                                            [string]
+  -s, --sample   agent sample data                                      [string]
   -d, --detail   agent detail                                           [string]
   -v, --verbose  verbose log               [boolean] [required] [default: false]
+  -m, --mermaid  mermaid                   [boolean] [required] [default: false]
+      --yaml     dump yaml                 [boolean] [required] [default: false]
+      --json     dump json                 [boolean] [required] [default: false]
       --log      output log                                             [string]
 ```
 
