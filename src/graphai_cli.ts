@@ -7,6 +7,7 @@ import "dotenv/config";
 
 import fs from "fs";
 import path from "path";
+import yaml from "yaml";
 
 import { hasOption, args } from "./args";
 import { callbackLog } from "./utils";
@@ -37,6 +38,14 @@ const main = async () => {
 
     if (args.mermaid) {
       mermaid(graph_data);
+      return;
+    }
+    if (args.json) {
+      console.log(JSON.stringify(graph_data, null, 2));
+      return;
+    }
+    if (args.yaml) {
+      console.log(yaml.stringify(graph_data, null, 2));
       return;
     }
 

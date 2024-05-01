@@ -31,6 +31,18 @@ export const args = yargs
     default: false,
     type: "boolean",
   })
+  .option("yaml", {
+    describe: "dump yaml",
+    demandOption: true,
+    default: false,
+    type: "boolean",
+  })
+  .option("json", {
+    describe: "dump json",
+    demandOption: true,
+    default: false,
+    type: "boolean",
+  })
   .option("log", {
     description: "output log",
     demandOption: false,

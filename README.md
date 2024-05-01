@@ -1,8 +1,8 @@
-# graphai cli
+# graphai cli🤖
 
 graphai command line tool
 
-## Install
+## Install 🚀
 
 npm i -g  @receptron/graphai_cli
 
