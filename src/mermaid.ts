@@ -2,6 +2,7 @@ import { GraphData } from "graphai";
 import { parseNodeName } from "graphai/lib/utils/utils";
 
 export const mermaid = (graphData: GraphData) => {
+  console.log("flowchart TD")
   Object.keys(graphData.nodes).forEach((nodeId) => {
     const node = graphData.nodes[nodeId];
     // label / name
@@ -18,7 +19,7 @@ export const mermaid = (graphData: GraphData) => {
       }
     }
     if ("value" in node) {
-      console.log(node.value);
+      // console.log(node.value);
     }
   });
 };
