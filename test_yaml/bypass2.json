@@ -1,7 +1,7 @@
 {
   "nodes": {
     "echo": {
-      "agentId": "echoAgent",
+      "agent": "echoAgent",
       "params": {
         "message": [
           "hello",
@@ -10,14 +10,14 @@
       }
     },
     "mapNode": {
-      "agentId": "mapAgent",
+      "agent": "mapAgent",
       "inputs": [
         "echo.message"
       ],
       "graph": {
         "nodes": {
           "bypassAgent": {
-            "agentId": "bypassAgent",
+            "agent": "bypassAgent",
             "inputs": [
               "$0"
             ],
@@ -27,7 +27,7 @@
       }
     },
     "bypassAgent2": {
-      "agentId": "bypassAgent",
+      "agent": "bypassAgent",
       "inputs": [
         "mapNode.bypassAgent"
       ],

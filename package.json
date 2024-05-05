@@ -47,7 +47,7 @@
     "deepmerge": "^4.3.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "graphai": "^0.2.3",
+    "graphai": "^0.2.7",
     "groq-sdk": "^0.3.3",
     "openai": "^4.12.4",
     "slashgpt": "^0.0.8",

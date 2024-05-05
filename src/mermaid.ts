@@ -6,7 +6,7 @@ export const mermaid = (graphData: GraphData) => {
   Object.keys(graphData.nodes).forEach((nodeId) => {
     const node = graphData.nodes[nodeId];
     // label / name
-    if ("agentId" in node) {
+    if ("agent" in node) {
       if (node.inputs) {
         node.inputs.forEach((input) => {
           const source = parseNodeName(input);
