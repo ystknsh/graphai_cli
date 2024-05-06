@@ -27,3 +27,8 @@ jobs:
     - run: yarn run build
     - run: yarn run eslint
     - run: node lib/graphai_cli.js test_yaml/test_base.yml
+    - run: node lib/graphai_cli.js test_yaml/test_base.yml -v
+    - run: yarn run cli -l
+    - run: yarn run cli -d slashGPTAgentInfo
+    - run: yarn run cli -s stringEmbeddingsAgentInfo
+    - run: LC_ALL=en.us yarn run cli --help
