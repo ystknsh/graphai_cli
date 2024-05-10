@@ -4,25 +4,18 @@
     "echo": {
       "agent": "echoAgent",
       "params": {
-        "message": [
-          "hello",
-          "hello"
-        ]
+        "message": ["hello", "hello"]
       }
     },
     "mapNode": {
       "agent": "mapAgent",
-      "inputs": [
-        ":echo.message"
-      ],
+      "inputs": [":echo.message"],
       "graph": {
         "version": 0.3,
         "nodes": {
           "bypassAgent": {
             "agent": "bypassAgent",
-            "inputs": [
-              ":$0"
-            ],
+            "inputs": [":$0"],
             "isResult": true
           }
         }
@@ -30,9 +23,7 @@
     },
     "bypassAgent2": {
       "agent": "bypassAgent",
-      "inputs": [
-        ":mapNode.bypassAgent"
-      ],
+      "inputs": [":mapNode.bypassAgent"],
       "isResult": true
     }
   }

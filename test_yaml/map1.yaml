@@ -25,7 +25,7 @@ nodes:
         node2:
           agent: stringTemplateAgent
           params:
-            template: 'I love ${0}.'
+            template: "I love ${0}."
           inputs:
             - :$0
           isResult: true
@@ -34,4 +34,3 @@ nodes:
     inputs:
       - :nestedNode
     isResult: true
-

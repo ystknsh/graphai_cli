@@ -9,17 +9,12 @@
     },
     "bypassAgent": {
       "agent": "bypassAgent",
-      "inputs": [
-        ":echo"
-      ]
+      "inputs": [":echo"]
     },
     "bypassAgent2": {
       "agent": "bypassAgent",
       "isResult": true,
-      "inputs": [
-        ":bypassAgent"
-      ]
+      "inputs": [":bypassAgent"]
     }
   }
 }
-  

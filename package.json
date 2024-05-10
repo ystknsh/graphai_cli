@@ -1,6 +1,6 @@
 {
   "name": "@receptron/graphai_cli",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "GraphAI command line tools.",
   "main": "lib/graphai_cli.js",
   "bin": {
@@ -12,8 +12,8 @@
   "scripts": {
     "build": "tsc && tsc-alias",
     "eslint": "eslint --fix --ext .ts ./src",
-    "format": "prettier --write '{src,tests,samples}/**/*.ts' .eslintrc.js",
-    "test": "node --test  -r tsconfig-paths/register --require ts-node/register ./tests/**/test_*.ts",
+    "format": "prettier --write '{src,test_yaml,samples}/**/*.{yaml,ts,json}' .eslintrc.js",
+    "test": "node --test  -r tsconfig-paths/register --require ts-node/register ./test_yaml/test_*.ts",
     "cli": "npx ts-node  -r tsconfig-paths/register ./src/graphai_cli.ts",
     "b": "yarn run format && yarn run eslint && yarn run build"
   },

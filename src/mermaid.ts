@@ -2,9 +2,8 @@ import { GraphData } from "graphai";
 import { parseNodeName } from "graphai/lib/utils/utils";
 
 export const mermaid = (graphData: GraphData) => {
-  console.log("flowchart TD")
+  console.log("flowchart TD");
   Object.keys(graphData.nodes).forEach((nodeId) => {
-    
     const node = graphData.nodes[nodeId];
     // label / name
     if ("agent" in node) {
