@@ -1,6 +1,6 @@
-# graphai cli🤖
+# GraphAI cli🤖
 
-graphai command line tool
+GraphAI command line tool
 
 ## Install 🚀
 
@@ -8,7 +8,7 @@ graphai command line tool
 npm i -g  @receptron/graphai_cli
 ```
 
-## Usage
+## Usage 📖 
 
 ```
 graphai_cli.ts <yaml_or_json_file>
@@ -31,13 +31,13 @@ Options:
       --log      output log                                             [string]
 ```
 
-### Run graphai
+### Run GraphAI 🔥
 
 ```
 graphai test_yaml/test_base.yml 
 ```
 
-### Get Agents List
+### Get Agents List 📚
 
 ```
 graphai -l
