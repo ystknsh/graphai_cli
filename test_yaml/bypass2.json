@@ -1,4 +1,5 @@
 {
+  "version": 0.3,
   "nodes": {
     "echo": {
       "agent": "echoAgent",
@@ -12,14 +13,15 @@
     "mapNode": {
       "agent": "mapAgent",
       "inputs": [
-        "echo.message"
+        ":echo.message"
       ],
       "graph": {
+        "version": 0.3,
         "nodes": {
           "bypassAgent": {
             "agent": "bypassAgent",
             "inputs": [
-              "$0"
+              ":$0"
             ],
             "isResult": true
           }
@@ -29,7 +31,7 @@
     "bypassAgent2": {
       "agent": "bypassAgent",
       "inputs": [
-        "mapNode.bypassAgent"
+        ":mapNode.bypassAgent"
       ],
       "isResult": true
     }
