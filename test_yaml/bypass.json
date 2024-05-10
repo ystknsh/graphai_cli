@@ -1,0 +1,25 @@
+{
+  "version": 0.3,
+  "nodes": {
+    "echo": {
+      "agent": "echoAgent",
+      "params": {
+        "message": "hello"
+      }
+    },
+    "bypassAgent": {
+      "agent": "bypassAgent",
+      "inputs": [
+        ":echo"
+      ]
+    },
+    "bypassAgent2": {
+      "agent": "bypassAgent",
+      "isResult": true,
+      "inputs": [
+        ":bypassAgent"
+      ]
+    }
+  }
+}
+  

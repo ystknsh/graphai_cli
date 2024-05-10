@@ -61,7 +61,7 @@ const main = async () => {
     }
     try {
       const results = await graph.run();
-      console.log(results);
+      console.log(JSON.stringify(results, null, 2));
     } catch (e) {
       console.log("error", e);
     }
