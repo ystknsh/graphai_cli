@@ -4,12 +4,13 @@ import { parseNodeName } from "graphai/lib/utils/utils";
 export const mermaid = (graphData: GraphData) => {
   console.log("flowchart TD")
   Object.keys(graphData.nodes).forEach((nodeId) => {
+    
     const node = graphData.nodes[nodeId];
     // label / name
     if ("agent" in node) {
       if (node.inputs) {
         node.inputs.forEach((input) => {
-          const source = parseNodeName(input);
+          const source = parseNodeName(input, graphData.version ?? 0.2);
           if (source.propIds) {
             console.log(` ${source.nodeId}(${source.nodeId}) -- ${source.propIds.join(".")} --> ${nodeId}`);
           } else {
