@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build": "tsc && tsc-alias",
-    "eslint": "eslint --fix --ext .ts ./src",
+    "eslint": "eslint --fix",
     "format": "prettier --write '{src,test_yaml,samples}/**/*.{yaml,ts,json}' .eslintrc.js",
     "test": "node --test  -r tsconfig-paths/register --require ts-node/register ./test_yaml/test_*.ts",
     "cli": "npx ts-node  -r tsconfig-paths/register ./src/graphai_cli.ts",
@@ -31,15 +31,13 @@
     "@types/express": "^4.17.21",
     "@types/node": "^20.8.7",
     "@types/yargs": "^17.0.32",
-    "@typescript-eslint/eslint-plugin": "^6.8.0",
-    "@typescript-eslint/parser": "^6.8.0",
-    "eslint": "^7.32.0 || ^8.2.0",
-    "eslint-plugin-import": "^2.25.2",
+    "eslint": "^9.2.0",
     "prettier": "^3.0.3",
     "ts-node": "^10.9.1",
     "tsc-alias": "^1.8.8",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^7.8.0"
   },
   "dependencies": {
     "@inquirer/prompts": "^5.0.0",

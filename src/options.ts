@@ -13,7 +13,7 @@ export const option = (args: Arguments, packages: Record<string, AgentFunctionIn
   };
 
   const getAgent = (agentId: string) => {
-    return Object.entries(packages).find(([k, v]) => k === agentId);
+    return Object.entries(packages).find(([k, __v]) => k === agentId);
   };
   const detail = () => {
     const agent = getAgent(args.detail as string);

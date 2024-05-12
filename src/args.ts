@@ -3,7 +3,7 @@ import yargs from "yargs";
 export const hasOption = ["-l", "--list", "-d", "--detail", "-s", "--sample"].some((o) => process.argv.includes(o));
 
 export const args = yargs
-  .scriptName('graphai')
+  .scriptName("graphai")
   .option("list", {
     alias: "l",
     description: "agents list",
