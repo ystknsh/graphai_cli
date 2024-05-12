@@ -11,7 +11,7 @@ npm i -g  @receptron/graphai_cli
 ## Usage 📖 
 
 ```
-graphai_cli.ts <yaml_or_json_file>
+graphai <yaml_or_json_file>
 
 run GraphAI with GraphAI file.
 
