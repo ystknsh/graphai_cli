@@ -12,7 +12,7 @@
   "scripts": {
     "build": "tsc && tsc-alias",
     "eslint": "eslint --fix",
-    "format": "prettier --write '{src,test_yaml,samples}/**/*.{yaml,ts,json}' .eslintrc.js",
+    "format": "prettier --write '{src,test_yaml,samples}/**/*.{yaml,ts,json}'",
     "test": "node --test  -r tsconfig-paths/register --require ts-node/register ./test_yaml/test_*.ts",
     "cli": "npx ts-node  -r tsconfig-paths/register ./src/graphai_cli.ts",
     "b": "yarn run format && yarn run eslint && yarn run build"
