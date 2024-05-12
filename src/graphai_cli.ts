@@ -50,7 +50,7 @@ const main = async () => {
     }
 
     const agents = Object.entries(packages).reduce((tmp: AgentFunctionDictonary, current) => {
-      const [k, v] = current;
+      const [__k, v] = current;
       tmp[v.name] = v.agent;
       return tmp;
     }, {});
