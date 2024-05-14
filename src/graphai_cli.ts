@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import { GraphAI } from "graphai";
-import { AgentFunctionDictonary } from "graphai/lib/type";
-import * as packages from "graphai/lib/experimental_agents/packages";
+import { AgentFunctionInfoDictonary } from "graphai/lib/type";
+import * as packages from "graphai/lib/experimental_agents";
 import "dotenv/config";
 
 import fs from "fs";
@@ -49,12 +49,7 @@ const main = async () => {
       return;
     }
 
-    const agents = Object.entries(packages).reduce((tmp: AgentFunctionDictonary, current) => {
-      const [__k, v] = current;
-      tmp[v.name] = v.agent;
-      return tmp;
-    }, {});
-    const graph = new GraphAI(graph_data, agents);
+    const graph = new GraphAI(graph_data, packages);
 
     if (args.verbose) {
       graph.onLogCallback = callbackLog;
