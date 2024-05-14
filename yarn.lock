@@ -1250,10 +1250,10 @@ gopd@^1.0.1:
   dependencies:
     get-intrinsic "^1.1.3"
 
-graphai@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/graphai/-/graphai-0.3.1.tgz#c8677ad26bcaf6f71e1e6bb9880377a60cd07f1c"
-  integrity sha512-oZGsH1tqlkeUIYs58LFlFHVNL9GzoFxpLCY1FfX2UgrI5fxNZNymkaw5lkTykePOpo9AV4a6q50AWric4e+bfg==
+graphai@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/graphai/-/graphai-0.3.2.tgz#f506554b35a93f057a7671b84cea0fbcff2f1ba7"
+  integrity sha512-+fRgamtlPOSl9AVK/phRQsqg8LTp+qeViqdXy2r70fzmDBsf41D4QJLbasX3sp5Yaa9EAm0zLSr18WI+C5HBHA==
 
 graphemer@^1.4.0:
   version "1.4.0"
@@ -2055,7 +2055,7 @@ typescript-eslint@^7.8.0:
     "@typescript-eslint/parser" "7.8.0"
     "@typescript-eslint/utils" "7.8.0"
 
-typescript@^5.2.2:
+typescript@^5.4.3:
   version "5.4.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.5.tgz#42ccef2c571fdbd0f6718b1d1f5e6e5ef006f611"
   integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
