@@ -1,0 +1,23 @@
+## textInputAgent
+
+### Description
+
+Text Input Agent
+
+### Samples
+
+
+
+### Author
+
+Receptron team
+
+### Repository
+
+https://github.com/receptron/graphai
+
+
+### License
+
+MIT
+

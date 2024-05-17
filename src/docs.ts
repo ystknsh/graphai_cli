@@ -47,9 +47,7 @@ const main = () => {
     const md = agentMd(agent);
     agent.category.map(async (cat) => {
       const dir = path.resolve(__dirname + "/../docs/" + cat);
-      if (!fs.existsSync(dir)) {
-        await fs.promises.mkdir(dir)
-      }
+      await fs.promises.mkdir(dir, { recursive: true })
       fs.writeFileSync(dir + "/" + agent.name + ".md", md);
     });
     // console.log(md);
