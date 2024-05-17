@@ -1,0 +1,52 @@
+import { AgentFunctionInfo } from "graphai/lib/type";
+
+import * as packages from "graphai/lib/experimental_agents";
+
+import fs from "fs";
+import path from "path";
+
+
+const agentAttribute = (agentInfo: AgentFunctionInfo, key: string) => {
+  if (key === "samples") {
+    return agentInfo.samples.map((sample) => {
+      return [
+        "#### inputs",
+        "```json",
+        JSON.stringify(sample.inputs, null, 10),
+        "````",
+        "#### params",
+        "```json",
+        JSON.stringify(sample.params),
+        "````",
+        "#### result",
+        "```json",
+        JSON.stringify(sample.result),
+        "````",
+      ].join("\n\n");
+        // return JSON.stringify(agentInfo.samples, null, 2);
+    }).join("\n");
+  }
+  return agentInfo[key as keyof AgentFunctionInfo] as string;
+}
+
+const readTemplate = (file: string) => {
+  return fs.readFileSync(path.resolve(__dirname) + "/../templates/" + file, "utf8");
+};
+
+const agentHtml = (agentInfo: AgentFunctionInfo) => { 
+  const template = readTemplate("agent.md");
+  const html = ["name", "description", "author", "repository", "license", "samples" ].reduce((tmp, key) => {
+    tmp = tmp.replace("{" + key + "}", agentAttribute(agentInfo, key))
+    return tmp;
+  }, template);
+  return html;
+};
+const main = () => {
+  Object.values(packages).map(agent => {
+    const html = agentHtml(agent);
+    console.log(html);
+    console.log("<hr/>\n")
+  });
+};
+
+main();
