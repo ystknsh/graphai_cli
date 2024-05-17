@@ -33,19 +33,26 @@ const readTemplate = (file: string) => {
   return fs.readFileSync(path.resolve(__dirname) + "/../templates/" + file, "utf8");
 };
 
-const agentHtml = (agentInfo: AgentFunctionInfo) => { 
+const agentMd = (agentInfo: AgentFunctionInfo) => { 
   const template = readTemplate("agent.md");
-  const html = ["name", "description", "author", "repository", "license", "samples" ].reduce((tmp, key) => {
+  const md = ["name", "description", "author", "repository", "license", "samples" ].reduce((tmp, key) => {
     tmp = tmp.replace("{" + key + "}", agentAttribute(agentInfo, key))
     return tmp;
   }, template);
-  return html;
+  return md;
 };
 const main = () => {
+  console.log(packages);
   Object.values(packages).map(agent => {
-    const html = agentHtml(agent);
-    console.log(html);
-    console.log("<hr/>\n")
+    const md = agentMd(agent);
+    agent.category.map(async (cat) => {
+      const dir = path.resolve(__dirname + "/../docs/" + cat);
+      if (!fs.existsSync(dir)) {
+        await fs.promises.mkdir(dir)
+      }
+      fs.writeFileSync(dir + "/" + agent.name + ".md", md);
+    });
+    // console.log(md);
   });
 };
 
