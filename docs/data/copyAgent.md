@@ -11,10 +11,10 @@ Returns inputs[0]
 ```json
 
 [
-          {
-                    "color": "red",
-                    "model": "Model 3"
-          }
+  {
+    "color": "red",
+    "model": "Model 3"
+  }
 ]
 
 ````
@@ -31,7 +31,10 @@ Returns inputs[0]
 
 ```json
 
-{"color":"red","model":"Model 3"}
+{
+  "color": "red",
+  "model": "Model 3"
+}
 
 ````
 #### inputs
@@ -39,7 +42,7 @@ Returns inputs[0]
 ```json
 
 [
-          "Hello World"
+  "Hello World"
 ]
 
 ````

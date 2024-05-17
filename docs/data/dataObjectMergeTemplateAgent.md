@@ -11,12 +11,12 @@ Merge object
 ```json
 
 [
-          {
-                    "content1": "hello"
-          },
-          {
-                    "content2": "test"
-          }
+  {
+    "content1": "hello"
+  },
+  {
+    "content2": "test"
+  }
 ]
 
 ````
@@ -33,7 +33,10 @@ Merge object
 
 ```json
 
-{"content1":"hello","content2":"test"}
+{
+  "content1": "hello",
+  "content2": "test"
+}
 
 ````
 #### inputs
@@ -41,9 +44,9 @@ Merge object
 ```json
 
 [
-          {
-                    "content1": "hello"
-          }
+  {
+    "content1": "hello"
+  }
 ]
 
 ````
@@ -60,7 +63,9 @@ Merge object
 
 ```json
 
-{"content1":"hello"}
+{
+  "content1": "hello"
+}
 
 ````
 #### inputs
@@ -68,12 +73,12 @@ Merge object
 ```json
 
 [
-          {
-                    "content": "hello1"
-          },
-          {
-                    "content": "hello2"
-          }
+  {
+    "content": "hello1"
+  },
+  {
+    "content": "hello2"
+  }
 ]
 
 ````
@@ -90,7 +95,9 @@ Merge object
 
 ```json
 
-{"content":"hello2"}
+{
+  "content": "hello2"
+}
 
 ````
 #### inputs
@@ -98,19 +105,19 @@ Merge object
 ```json
 
 [
-          {
-                    "a": 1,
-                    "b": 1
-          },
-          {
-                    "a": 2,
-                    "b": 2
-          },
-          {
-                    "a": 3,
-                    "b": 0,
-                    "c": 5
-          }
+  {
+    "a": 1,
+    "b": 1
+  },
+  {
+    "a": 2,
+    "b": 2
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": 5
+  }
 ]
 
 ````
@@ -127,7 +134,11 @@ Merge object
 
 ```json
 
-{"a":3,"b":0,"c":5}
+{
+  "a": 3,
+  "b": 0,
+  "c": 5
+}
 
 ````
 #### inputs
@@ -135,33 +146,33 @@ Merge object
 ```json
 
 [
-          {
-                    "a": {
-                              "b": {
-                                        "c": {
-                                                  "d": "e"
-                                        }
-                              }
-                    }
-          },
-          {
-                    "b": {
-                              "c": {
-                                        "d": {
-                                                  "e": "f"
-                                        }
-                              }
-                    }
-          },
-          {
-                    "b": {
-                              "d": {
-                                        "e": {
-                                                  "f": "g"
-                                        }
-                              }
-                    }
-          }
+  {
+    "a": {
+      "b": {
+        "c": {
+          "d": "e"
+        }
+      }
+    }
+  },
+  {
+    "b": {
+      "c": {
+        "d": {
+          "e": "f"
+        }
+      }
+    }
+  },
+  {
+    "b": {
+      "d": {
+        "e": {
+          "f": "g"
+        }
+      }
+    }
+  }
 ]
 
 ````
@@ -178,7 +189,27 @@ Merge object
 
 ```json
 
-{"a":{"b":{"c":{"d":"e"}}},"b":{"c":{"d":{"e":"f"}},"d":{"e":{"f":"g"}}}}
+{
+  "a": {
+    "b": {
+      "c": {
+        "d": "e"
+      }
+    }
+  },
+  "b": {
+    "c": {
+      "d": {
+        "e": "f"
+      }
+    },
+    "d": {
+      "e": {
+        "f": "g"
+      }
+    }
+  }
+}
 
 ````
 

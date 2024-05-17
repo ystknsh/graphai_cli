@@ -11,15 +11,15 @@ Returns the sum of input values
 ```json
 
 [
-          {
-                    "a": 1
-          },
-          {
-                    "a": 2
-          },
-          {
-                    "a": 3
-          }
+  {
+    "a": 1
+  },
+  {
+    "a": 2
+  },
+  {
+    "a": 3
+  }
 ]
 
 ````
@@ -36,7 +36,9 @@ Returns the sum of input values
 
 ```json
 
-{"a":6}
+{
+  "a": 6
+}
 
 ````
 #### inputs
@@ -44,30 +46,30 @@ Returns the sum of input values
 ```json
 
 [
-          [
-                    {
-                              "a": 1,
-                              "b": -1
-                    },
-                    {
-                              "c": 10
-                    }
-          ],
-          [
-                    {
-                              "a": 2,
-                              "b": -1
-                    }
-          ],
-          [
-                    {
-                              "a": 3,
-                              "b": -2
-                    },
-                    {
-                              "d": -10
-                    }
-          ]
+  [
+    {
+      "a": 1,
+      "b": -1
+    },
+    {
+      "c": 10
+    }
+  ],
+  [
+    {
+      "a": 2,
+      "b": -1
+    }
+  ],
+  [
+    {
+      "a": 3,
+      "b": -2
+    },
+    {
+      "d": -10
+    }
+  ]
 ]
 
 ````
@@ -84,7 +86,12 @@ Returns the sum of input values
 
 ```json
 
-{"a":6,"b":-4,"c":10,"d":-10}
+{
+  "a": 6,
+  "b": -4,
+  "c": 10,
+  "d": -10
+}
 
 ````
 #### inputs
@@ -92,9 +99,9 @@ Returns the sum of input values
 ```json
 
 [
-          {
-                    "a": 1
-          }
+  {
+    "a": 1
+  }
 ]
 
 ````
@@ -111,7 +118,9 @@ Returns the sum of input values
 
 ```json
 
-{"a":1}
+{
+  "a": 1
+}
 
 ````
 #### inputs
@@ -119,12 +128,12 @@ Returns the sum of input values
 ```json
 
 [
-          {
-                    "a": 1
-          },
-          {
-                    "a": 2
-          }
+  {
+    "a": 1
+  },
+  {
+    "a": 2
+  }
 ]
 
 ````
@@ -141,7 +150,9 @@ Returns the sum of input values
 
 ```json
 
-{"a":3}
+{
+  "a": 3
+}
 
 ````
 #### inputs
@@ -149,15 +160,15 @@ Returns the sum of input values
 ```json
 
 [
-          {
-                    "a": 1
-          },
-          {
-                    "a": 2
-          },
-          {
-                    "a": 3
-          }
+  {
+    "a": 1
+  },
+  {
+    "a": 2
+  },
+  {
+    "a": 3
+  }
 ]
 
 ````
@@ -174,7 +185,9 @@ Returns the sum of input values
 
 ```json
 
-{"a":6}
+{
+  "a": 6
+}
 
 ````
 #### inputs
@@ -182,18 +195,18 @@ Returns the sum of input values
 ```json
 
 [
-          {
-                    "a": 1,
-                    "b": 1
-          },
-          {
-                    "a": 2,
-                    "b": 2
-          },
-          {
-                    "a": 3,
-                    "b": 0
-          }
+  {
+    "a": 1,
+    "b": 1
+  },
+  {
+    "a": 2,
+    "b": 2
+  },
+  {
+    "a": 3,
+    "b": 0
+  }
 ]
 
 ````
@@ -210,7 +223,10 @@ Returns the sum of input values
 
 ```json
 
-{"a":6,"b":3}
+{
+  "a": 6,
+  "b": 3
+}
 
 ````
 #### inputs
@@ -218,17 +234,17 @@ Returns the sum of input values
 ```json
 
 [
-          {
-                    "a": 1
-          },
-          {
-                    "a": 2,
-                    "b": 2
-          },
-          {
-                    "a": 3,
-                    "b": 0
-          }
+  {
+    "a": 1
+  },
+  {
+    "a": 2,
+    "b": 2
+  },
+  {
+    "a": 3,
+    "b": 0
+  }
 ]
 
 ````
@@ -245,7 +261,10 @@ Returns the sum of input values
 
 ```json
 
-{"a":6,"b":2}
+{
+  "a": 6,
+  "b": 2
+}
 
 ````
 

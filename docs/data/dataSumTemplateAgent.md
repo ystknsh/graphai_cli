@@ -11,9 +11,9 @@ Returns the sum of input values
 ```json
 
 [
-          1,
-          2,
-          3
+  1,
+  2,
+  3
 ]
 
 ````
@@ -38,7 +38,7 @@ Returns the sum of input values
 ```json
 
 [
-          1
+  1
 ]
 
 ````
@@ -63,8 +63,8 @@ Returns the sum of input values
 ```json
 
 [
-          1,
-          2
+  1,
+  2
 ]
 
 ````
@@ -89,9 +89,9 @@ Returns the sum of input values
 ```json
 
 [
-          1,
-          2,
-          3
+  1,
+  2,
+  3
 ]
 
 ````

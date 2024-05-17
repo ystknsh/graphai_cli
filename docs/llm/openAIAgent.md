@@ -11,7 +11,7 @@ Openai Agent
 ```json
 
 [
-          "this is response result"
+  "this is response result"
 ]
 
 ````
@@ -28,7 +28,23 @@ Openai Agent
 
 ```json
 
-{"object":"chat.completion","id":"chatcmpl-9N7HxXYbwjmdbdiQE94MHoVluQhyt","choices":[{"message":{"role":"assistant","content":"this is response result"},"finish_reason":"stop","index":0,"logprobs":null}],"created":1715296589,"model":"gpt-3.5-turbo-0125"}
+{
+  "object": "chat.completion",
+  "id": "chatcmpl-9N7HxXYbwjmdbdiQE94MHoVluQhyt",
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "this is response result"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "created": 1715296589,
+  "model": "gpt-3.5-turbo-0125"
+}
 
 ````
 

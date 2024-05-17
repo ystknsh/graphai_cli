@@ -12,7 +12,7 @@ const agentAttribute = (agentInfo: AgentFunctionInfo, key: string) => {
       return [
         "#### inputs",
         "```json",
-        JSON.stringify(sample.inputs, null, 10),
+        JSON.stringify(sample.inputs, null, 2),
         "````",
         "#### params",
         "```json",
@@ -20,7 +20,7 @@ const agentAttribute = (agentInfo: AgentFunctionInfo, key: string) => {
         "````",
         "#### result",
         "```json",
-        JSON.stringify(sample.result),
+        JSON.stringify(sample.result, null, 2),
         "````",
       ].join("\n\n");
         // return JSON.stringify(agentInfo.samples, null, 2);

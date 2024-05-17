@@ -11,13 +11,13 @@ Retrieves JSON data from the specified URL
 ```json
 
 [
-          "https://www.google.com",
-          {
-                    "foo": "bar"
-          },
-          {
-                    "x-myHeader": "secret"
-          }
+  "https://www.google.com",
+  {
+    "foo": "bar"
+  },
+  {
+    "x-myHeader": "secret"
+  }
 ]
 
 ````
@@ -34,7 +34,13 @@ Retrieves JSON data from the specified URL
 
 ```json
 
-{"method":"GET","url":"https://www.google.com/?foo=bar","headers":{"x-myHeader":"secret"}}
+{
+  "method": "GET",
+  "url": "https://www.google.com/?foo=bar",
+  "headers": {
+    "x-myHeader": "secret"
+  }
+}
 
 ````
 #### inputs
@@ -42,12 +48,12 @@ Retrieves JSON data from the specified URL
 ```json
 
 [
-          "https://www.google.com",
-          null,
-          null,
-          {
-                    "foo": "bar"
-          }
+  "https://www.google.com",
+  null,
+  null,
+  {
+    "foo": "bar"
+  }
 ]
 
 ````
@@ -64,7 +70,14 @@ Retrieves JSON data from the specified URL
 
 ```json
 
-{"method":"POST","url":"https://www.google.com/","headers":{"Content-Type":"application/json"},"body":"{\"foo\":\"bar\"}"}
+{
+  "method": "POST",
+  "url": "https://www.google.com/",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\"foo\":\"bar\"}"
+}
 
 ````
 

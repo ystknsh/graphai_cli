@@ -11,12 +11,12 @@ It allows developers to implement the agent function within the graph itself.
 ```json
 
 [
-          {
-                    "model": "Model 3",
-                    "maker": "Tesla",
-                    "range": 300,
-                    "price": 35000
-          }
+  {
+    "model": "Model 3",
+    "maker": "Tesla",
+    "range": 300,
+    "price": 35000
+  }
 ]
 
 ````
@@ -41,7 +41,7 @@ It allows developers to implement the agent function within the graph itself.
 ```json
 
 [
-          "{\"model\":\"Model 3\",\"maker\":\"Tesla\",\"range\":300,\"price\":35000}"
+  "{\"model\":\"Model 3\",\"maker\":\"Tesla\",\"range\":300,\"price\":35000}"
 ]
 
 ````
@@ -58,7 +58,12 @@ It allows developers to implement the agent function within the graph itself.
 
 ```json
 
-{"model":"Model 3","maker":"Tesla","range":300,"price":35000}
+{
+  "model": "Model 3",
+  "maker": "Tesla",
+  "range": 300,
+  "price": 35000
+}
 
 ````
 
