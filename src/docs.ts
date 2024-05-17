@@ -41,17 +41,36 @@ const agentMd = (agentInfo: AgentFunctionInfo) => {
   }, template);
   return md;
 };
+const IndexMd = (ret: Record<string, Record<string, string>>) => {
+  const templates = [];
+  for (const cat of Object.keys(ret)) {
+    templates.push("## " + cat)
+    for (const agentName of Object.keys(ret[cat])) {
+      templates.push("### [" + agentName +"](./" + cat + "/" + agentName + ".md)")
+    }
+    templates.push("")
+  }
+  return templates.join("\n");
+};
 const main = () => {
-  console.log(packages);
+  const ret: Record<string, Record<string, string>> = {};
   Object.values(packages).map(agent => {
     const md = agentMd(agent);
     agent.category.map(async (cat) => {
-      const dir = path.resolve(__dirname + "/../docs/" + cat);
-      await fs.promises.mkdir(dir, { recursive: true })
-      fs.writeFileSync(dir + "/" + agent.name + ".md", md);
+      if (!ret[cat]) {
+        ret[cat] = {};
+      }
+      ret[cat][agent.name] = agent.name;
+      const catDir = path.resolve(__dirname + "/../docs/" + cat);
+      await fs.promises.mkdir(catDir, { recursive: true })
+      fs.writeFileSync(catDir + "/" + agent.name + ".md", md);
+      
     });
-    // console.log(md);
   });
+  // console.log(ret);
+  const index = IndexMd(ret)
+  fs.writeFileSync(__dirname + "/../docs/README.md", index);
+
 };
 
 main();
