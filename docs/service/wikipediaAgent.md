@@ -8,6 +8,9 @@ Retrieves data from wikipedia
 
 
 
+### Schema
+
+
 ### Author
 
 Receptron
@@ -21,7 +24,3 @@ https://github.com/receptron/graphai
 
 MIT
 
-
-### Link
-
-{link}

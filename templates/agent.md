@@ -8,6 +8,9 @@
 
 {samples}
 
+### Schema
+{schemas}
+
 ### Author
 
 {author}
@@ -21,7 +24,3 @@
 
 {license}
 
-
-### Link
-
-{link}

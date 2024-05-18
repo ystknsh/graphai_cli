@@ -427,6 +427,444 @@ Filter properties based on property name either with 'include' or 'exclude'
 
 ````
 
+### Schema
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "color",
+      "model",
+      "type",
+      "maker",
+      "range"
+    ],
+    "properties": {
+      "color": {
+        "type": "string",
+        "minLength": 1
+      },
+      "model": {
+        "type": "string",
+        "minLength": 1
+      },
+      "type": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maker": {
+        "type": "string",
+        "minLength": 1
+      },
+      "range": {
+        "type": "number"
+      }
+    }
+  }
+}
+
+````
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "0"
+    ],
+    "properties": {
+      "0": {
+        "type": "array",
+        "uniqueItems": true,
+        "minItems": 1,
+        "items": {
+          "required": [
+            "color",
+            "model",
+            "type",
+            "maker",
+            "range"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maker": {
+              "type": "string",
+              "minLength": 1
+            },
+            "range": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+````
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "0"
+    ],
+    "properties": {
+      "0": {
+        "type": "array",
+        "uniqueItems": true,
+        "minItems": 1,
+        "items": {
+          "required": [
+            "color",
+            "model",
+            "type",
+            "maker",
+            "range"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maker": {
+              "type": "string",
+              "minLength": 1
+            },
+            "range": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+````
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "0"
+    ],
+    "properties": {
+      "0": {
+        "type": "array",
+        "uniqueItems": true,
+        "minItems": 1,
+        "items": {
+          "required": [
+            "color",
+            "model",
+            "type",
+            "maker",
+            "range"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maker": {
+              "type": "string",
+              "minLength": 1
+            },
+            "range": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+````
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "0"
+    ],
+    "properties": {
+      "0": {
+        "type": "array",
+        "uniqueItems": true,
+        "minItems": 1,
+        "items": {
+          "required": [
+            "color",
+            "model",
+            "type",
+            "maker",
+            "range"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maker": {
+              "type": "string",
+              "minLength": 1
+            },
+            "range": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+````
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "0"
+    ],
+    "properties": {
+      "0": {
+        "type": "array",
+        "uniqueItems": true,
+        "minItems": 1,
+        "items": {
+          "required": [
+            "color",
+            "model",
+            "type",
+            "maker",
+            "range"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maker": {
+              "type": "string",
+              "minLength": 1
+            },
+            "range": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+````
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "0"
+    ],
+    "properties": {
+      "0": {
+        "type": "array",
+        "uniqueItems": true,
+        "minItems": 1,
+        "items": {
+          "required": [
+            "color",
+            "model",
+            "type",
+            "maker",
+            "range"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maker": {
+              "type": "string",
+              "minLength": 1
+            },
+            "range": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+````
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "0"
+    ],
+    "properties": {
+      "0": {
+        "type": "array",
+        "uniqueItems": true,
+        "minItems": 1,
+        "items": {
+          "required": [
+            "color",
+            "model",
+            "type",
+            "maker",
+            "range"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maker": {
+              "type": "string",
+              "minLength": 1
+            },
+            "range": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+````
+
 ### Author
 
 Receptron team
@@ -440,7 +878,3 @@ https://github.com/receptron/graphai
 
 MIT
 
-
-### Link
-
-{link}

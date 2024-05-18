@@ -8,6 +8,9 @@ Echo agent
 
 
 
+### Schema
+
+
 ### Author
 
 Satoshi Nakajima
@@ -21,7 +24,3 @@ https://github.com/receptron/graphai
 
 MIT
 
-
-### Link
-
-{link}

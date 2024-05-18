@@ -8,6 +8,9 @@ Stream mock agent
 
 
 
+### Schema
+
+
 ### Author
 
 Isamu Arimoto
@@ -21,7 +24,3 @@ https://github.com/receptron/graphai
 
 MIT
 
-
-### Link
-
-{link}

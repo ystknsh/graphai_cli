@@ -8,6 +8,9 @@ sleeper debug Agent
 
 
 
+### Schema
+
+
 ### Author
 
 Receptron team
@@ -21,7 +24,3 @@ https://github.com/receptron/graphai
 
 MIT
 
-
-### Link
-
-{link}

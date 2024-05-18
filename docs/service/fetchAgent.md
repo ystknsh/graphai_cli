@@ -81,6 +81,87 @@ Retrieves JSON data from the specified URL
 
 ````
 
+### Schema
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "1",
+      "2"
+    ],
+    "properties": {
+      "1": {
+        "type": "object",
+        "properties": {
+          "foo": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "foo"
+        ]
+      },
+      "2": {
+        "type": "object",
+        "properties": {
+          "x-myHeader": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "x-myHeader"
+        ]
+      }
+    }
+  }
+}
+
+````
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "3"
+    ],
+    "properties": {
+      "3": {
+        "type": "object",
+        "properties": {
+          "foo": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "foo"
+        ]
+      }
+    }
+  }
+}
+
+````
+
 ### Author
 
 Receptron
@@ -94,7 +175,3 @@ https://github.com/receptron/graphai
 
 MIT
 
-
-### Link
-
-{link}

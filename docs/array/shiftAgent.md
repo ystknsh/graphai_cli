@@ -77,6 +77,66 @@ shift Agent
 
 ````
 
+### Schema
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "0"
+    ],
+    "properties": {
+      "0": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "required": [],
+          "properties": {}
+        }
+      }
+    }
+  }
+}
+
+````
+#### inputs
+
+```json
+
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "0"
+    ],
+    "properties": {
+      "0": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "required": [],
+          "properties": {}
+        }
+      }
+    }
+  }
+}
+
+````
+
 ### Author
 
 Receptron team
@@ -90,7 +150,3 @@ https://github.com/receptron/graphai
 
 MIT
 
-
-### Link
-
-{link}
