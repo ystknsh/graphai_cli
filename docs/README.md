@@ -1,14 +1,7 @@
-## data
-### [functionAgent](./data/functionAgent.md)
-### [dataObjectMergeTemplateAgent](./data/dataObjectMergeTemplateAgent.md)
-### [totalAgent](./data/totalAgent.md)
-### [dataSumTemplateAgent](./data/dataSumTemplateAgent.md)
-### [propertyFilterAgent](./data/propertyFilterAgent.md)
-### [copyAgent](./data/copyAgent.md)
-
 ## string
 ### [stringSplitterAgent](./string/stringSplitterAgent.md)
 ### [stringTemplateAgent](./string/stringTemplateAgent.md)
+### [jsonParserAgent](./string/jsonParserAgent.md)
 
 ## array
 ### [pushAgent](./array/pushAgent.md)
@@ -31,6 +24,14 @@
 ## graph
 ### [nestedAgent](./graph/nestedAgent.md)
 ### [mapAgent](./graph/mapAgent.md)
+### [workerAgent](./graph/workerAgent.md)
+
+## data
+### [dataObjectMergeTemplateAgent](./data/dataObjectMergeTemplateAgent.md)
+### [totalAgent](./data/totalAgent.md)
+### [dataSumTemplateAgent](./data/dataSumTemplateAgent.md)
+### [propertyFilterAgent](./data/propertyFilterAgent.md)
+### [copyAgent](./data/copyAgent.md)
 
 ## sleeper
 ### [sleeperAgent](./sleeper/sleeperAgent.md)
@@ -38,7 +39,6 @@
 
 ## llm
 ### [groqAgent](./llm/groqAgent.md)
-### [groqStreamAgent](./llm/groqStreamAgent.md)
 ### [slashGPTAgent](./llm/slashGPTAgent.md)
 ### [openAIAgent](./llm/openAIAgent.md)
 ### [anthropicAgent](./llm/anthropicAgent.md)

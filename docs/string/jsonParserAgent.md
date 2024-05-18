@@ -1,8 +1,8 @@
-## shiftAgent
+## jsonParserAgent
 
 ### Description
 
-shift Agent
+Template agent
 
 ### Samples
 
@@ -11,11 +11,10 @@ shift Agent
 ```json
 
 [
-  [
-    1,
-    2,
-    3
-  ]
+  {
+    "apple": "red",
+    "lemon": "yellow"
+  }
 ]
 
 ````
@@ -24,7 +23,7 @@ shift Agent
 
 ```json
 
-{}
+{"stringify":true}
 
 ````
 
@@ -32,13 +31,7 @@ shift Agent
 
 ```json
 
-{
-  "array": [
-    2,
-    3
-  ],
-  "item": 1
-}
+"{\n  \"apple\": \"red\",\n  \"lemon\": \"yellow\"\n}"
 
 ````
 #### inputs
@@ -46,11 +39,7 @@ shift Agent
 ```json
 
 [
-  [
-    "a",
-    "b",
-    "c"
-  ]
+  "{\n  \"apple\": \"red\",\n  \"lemon\": \"yellow\"\n}"
 ]
 
 ````
@@ -68,18 +57,15 @@ shift Agent
 ```json
 
 {
-  "array": [
-    "b",
-    "c"
-  ],
-  "item": "a"
+  "apple": "red",
+  "lemon": "yellow"
 }
 
 ````
 
 ### Author
 
-Receptron team
+Satoshi Nakajima
 
 ### Repository
 

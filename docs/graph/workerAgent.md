@@ -1,8 +1,8 @@
-## copyMessageAgent
+## workerAgent
 
 ### Description
 
-CopyMessage agent
+Map Agent
 
 ### Samples
 
@@ -18,7 +18,7 @@ CopyMessage agent
 
 ```json
 
-{"count":4,"message":"hello"}
+{}
 
 ````
 
@@ -27,12 +27,34 @@ CopyMessage agent
 ```json
 
 {
-  "messages": [
-    "hello",
-    "hello",
-    "hello",
-    "hello"
-  ]
+  "message": "May the force be with you"
+}
+
+````
+#### inputs
+
+```json
+
+[
+  "May the force be with you"
+]
+
+````
+
+#### params
+
+```json
+
+{}
+
+````
+
+#### result
+
+```json
+
+{
+  "message": "May the force be with you"
 }
 
 ````

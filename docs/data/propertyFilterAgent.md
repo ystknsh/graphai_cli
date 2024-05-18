@@ -366,6 +366,66 @@ Filter properties based on property name either with 'include' or 'exclude'
 ]
 
 ````
+#### inputs
+
+```json
+
+[
+  [
+    {
+      "color": "red",
+      "model": "Model 3",
+      "type": "EV",
+      "maker": "Tesla",
+      "range": 300
+    },
+    {
+      "color": "blue",
+      "model": "Model Y",
+      "type": "EV",
+      "maker": "Tesla",
+      "range": 400
+    }
+  ],
+  "Tesla Motors"
+]
+
+````
+
+#### params
+
+```json
+
+{"inspect":[{"propId":"isTesla","equal":"Tesla Motors"},{"propId":"isGM","notEqual":"Tesla Motors","from":1}]}
+
+````
+
+#### result
+
+```json
+
+[
+  {
+    "color": "red",
+    "model": "Model 3",
+    "type": "EV",
+    "maker": "Tesla",
+    "range": 300,
+    "isTesla": true,
+    "isGM": false
+  },
+  {
+    "color": "blue",
+    "model": "Model Y",
+    "type": "EV",
+    "maker": "Tesla",
+    "range": 400,
+    "isTesla": true,
+    "isGM": false
+  }
+]
+
+````
 
 ### Author
 
@@ -380,3 +440,7 @@ https://github.com/receptron/graphai
 
 MIT
 
+
+### Link
+
+{link}
