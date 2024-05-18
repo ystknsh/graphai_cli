@@ -118,6 +118,7 @@ Pop Agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -212,6 +213,36 @@ Pop Agent
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.array.$0",
+  ":agentId.array.$1",
+  ":agentId.item"
+]
+
+````
+```json
+
+[
+  ":agentId.array.$0",
+  ":agentId.array.$1",
+  ":agentId.item"
+]
+
+````
+```json
+
+[
+  ":agentId.array.$0",
+  ":agentId.array.$1",
+  ":agentId.item"
+]
 
 ````
 

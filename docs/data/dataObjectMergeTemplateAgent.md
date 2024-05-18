@@ -214,6 +214,7 @@ Merge object
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -368,6 +369,49 @@ Merge object
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.content1",
+  ":agentId.content2"
+]
+
+````
+```json
+
+[
+  ":agentId.content1"
+]
+
+````
+```json
+
+[
+  ":agentId.content"
+]
+
+````
+```json
+
+[
+  ":agentId.a",
+  ":agentId.b",
+  ":agentId.c"
+]
+
+````
+```json
+
+[
+  ":agentId.a.b.c.d",
+  ":agentId.b.c.d.e",
+  ":agentId.b.d.e.f"
+]
 
 ````
 

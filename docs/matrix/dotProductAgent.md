@@ -95,6 +95,7 @@ dotProduct Agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -211,6 +212,26 @@ dotProduct Agent
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.$0",
+  ":agentId.$1",
+  ":agentId.$2"
+]
+
+````
+```json
+
+[
+  ":agentId.$0",
+  ":agentId.$1"
+]
 
 ````
 

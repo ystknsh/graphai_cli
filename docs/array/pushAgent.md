@@ -117,6 +117,7 @@ push Agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -221,6 +222,37 @@ push Agent
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.$0",
+  ":agentId.$1",
+  ":agentId.$2"
+]
+
+````
+```json
+
+[
+  ":agentId.$0",
+  ":agentId.$1",
+  ":agentId.$2",
+  ":agentId.$3",
+  ":agentId.$4"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.apple",
+  ":agentId.$1.lemon"
+]
 
 ````
 

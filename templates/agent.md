@@ -9,7 +9,12 @@
 {samples}
 
 ### Schema
+
 {schemas}
+
+### Input Format
+
+{resultKey}
 
 ### Author
 

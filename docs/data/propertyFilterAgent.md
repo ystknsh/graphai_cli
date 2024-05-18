@@ -428,6 +428,7 @@ Filter properties based on property name either with 'include' or 'exclude'
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -862,6 +863,123 @@ Filter properties based on property name either with 'include' or 'exclude'
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.color",
+  ":agentId.model"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.color",
+  ":agentId.$0.model",
+  ":agentId.$1.color",
+  ":agentId.$1.model"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.type",
+  ":agentId.$0.maker",
+  ":agentId.$0.range",
+  ":agentId.$1.type",
+  ":agentId.$1.maker",
+  ":agentId.$1.range"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.color",
+  ":agentId.$0.model",
+  ":agentId.$0.type",
+  ":agentId.$0.maker",
+  ":agentId.$0.range",
+  ":agentId.$1.color",
+  ":agentId.$1.model",
+  ":agentId.$1.type",
+  ":agentId.$1.maker",
+  ":agentId.$1.range"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.color",
+  ":agentId.$0.model",
+  ":agentId.$0.type",
+  ":agentId.$0.maker",
+  ":agentId.$0.range",
+  ":agentId.$1.color",
+  ":agentId.$1.model",
+  ":agentId.$1.type",
+  ":agentId.$1.maker",
+  ":agentId.$1.range"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.color",
+  ":agentId.$0.model",
+  ":agentId.$0.type",
+  ":agentId.$0.maker",
+  ":agentId.$0.range",
+  ":agentId.$1.color",
+  ":agentId.$1.model",
+  ":agentId.$1.type",
+  ":agentId.$1.maker",
+  ":agentId.$1.range"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.color",
+  ":agentId.$0.model",
+  ":agentId.$0.type",
+  ":agentId.$0.maker",
+  ":agentId.$0.range",
+  ":agentId.$1.color",
+  ":agentId.$1.model",
+  ":agentId.$1.type",
+  ":agentId.$1.maker",
+  ":agentId.$1.range"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.color",
+  ":agentId.$0.model",
+  ":agentId.$0.type",
+  ":agentId.$0.maker",
+  ":agentId.$0.range",
+  ":agentId.$0.isTesla",
+  ":agentId.$0.isGM",
+  ":agentId.$1.color",
+  ":agentId.$1.model",
+  ":agentId.$1.type",
+  ":agentId.$1.maker",
+  ":agentId.$1.range",
+  ":agentId.$1.isTesla",
+  ":agentId.$1.isGM"
+]
 
 ````
 

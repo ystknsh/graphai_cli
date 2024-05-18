@@ -66,6 +66,7 @@ Copy2Array agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -89,6 +90,25 @@ Copy2Array agent
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.$0.message",
+  ":agentId.$1.message",
+  ":agentId.$2.message",
+  ":agentId.$3.message",
+  ":agentId.$4.message",
+  ":agentId.$5.message",
+  ":agentId.$6.message",
+  ":agentId.$7.message",
+  ":agentId.$8.message",
+  ":agentId.$9.message"
+]
 
 ````
 

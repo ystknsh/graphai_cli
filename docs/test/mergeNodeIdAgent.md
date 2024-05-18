@@ -38,6 +38,7 @@ merge node id agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -61,6 +62,17 @@ merge node id agent
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.message",
+  ":agentId.test"
+]
 
 ````
 

@@ -1,4 +1,5 @@
 import { AgentFunctionInfo } from "graphai/lib/type";
+import { debugResultKey } from "graphai/lib/utils/utils";
 
 import jsonSchemaGenerator from "json-schema-generator";
 
@@ -39,6 +40,15 @@ const agentAttribute = (agentInfo: AgentFunctionInfo, key: string) => {
       // return JSON.stringify(agentInfo.samples, null, 2);
     }).join("\n");
   }
+  if (key === "resultKey") {
+    return agentInfo.samples.map((sample) => {
+      return [
+        "```json",
+        JSON.stringify(debugResultKey("agentId", sample.result), null, 2),
+        "````",
+      ].join("\n\n");
+    }).join("\n");
+  }
   return agentInfo[key as keyof AgentFunctionInfo] as string;
 }
 
@@ -48,7 +58,7 @@ const readTemplate = (file: string) => {
 
 const agentMd = (agentInfo: AgentFunctionInfo) => { 
   const template = readTemplate("agent.md");
-  const md = ["name", "description", "author", "repository", "license", "samples", "schemas" ].reduce((tmp, key) => {
+  const md = ["name", "description", "author", "repository", "license", "samples", "schemas", "resultKey" ].reduce((tmp, key) => {
     tmp = tmp.replace("{" + key + "}", agentAttribute(agentInfo, key))
     return tmp;
   }, template);

@@ -82,6 +82,7 @@ Retrieves JSON data from the specified URL
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -159,6 +160,29 @@ Retrieves JSON data from the specified URL
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.method",
+  ":agentId.url",
+  ":agentId.headers.x-myHeader",
+  ":agentId.body"
+]
+
+````
+```json
+
+[
+  ":agentId.method",
+  ":agentId.url",
+  ":agentId.headers.Content-Type",
+  ":agentId.body"
+]
 
 ````
 

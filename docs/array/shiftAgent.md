@@ -78,6 +78,7 @@ shift Agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -134,6 +135,27 @@ shift Agent
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.array.$0",
+  ":agentId.array.$1",
+  ":agentId.item"
+]
+
+````
+```json
+
+[
+  ":agentId.array.$0",
+  ":agentId.array.$1",
+  ":agentId.item"
+]
 
 ````
 

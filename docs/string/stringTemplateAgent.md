@@ -154,6 +154,7 @@ Template agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -242,6 +243,48 @@ Template agent
     "properties": {}
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId"
+]
+
+````
+```json
+
+[
+  ":agentId.$0",
+  ":agentId.$1"
+]
+
+````
+```json
+
+[
+  ":agentId.apple",
+  ":agentId.lemon"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.apple",
+  ":agentId.$0.lemon"
+]
+
+````
+```json
+
+[
+  ":agentId.apple",
+  ":agentId.lemon.$0"
+]
 
 ````
 

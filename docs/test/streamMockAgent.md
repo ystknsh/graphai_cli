@@ -11,6 +11,11 @@ Stream mock agent
 ### Schema
 
 
+
+### Input Format
+
+
+
 ### Author
 
 Isamu Arimoto

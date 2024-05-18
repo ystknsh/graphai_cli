@@ -38,6 +38,7 @@ Counting agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -54,6 +55,19 @@ Counting agent
     "properties": {}
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.list.$0",
+  ":agentId.list.$1",
+  ":agentId.list.$2",
+  ":agentId.list.$3"
+]
 
 ````
 

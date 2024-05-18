@@ -60,6 +60,7 @@ Map Agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -94,6 +95,23 @@ Map Agent
     "properties": {}
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.message"
+]
+
+````
+```json
+
+[
+  ":agentId.message"
+]
 
 ````
 

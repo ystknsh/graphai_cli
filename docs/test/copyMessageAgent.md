@@ -38,6 +38,7 @@ CopyMessage agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -54,6 +55,19 @@ CopyMessage agent
     "properties": {}
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.messages.$0",
+  ":agentId.messages.$1",
+  ":agentId.messages.$2",
+  ":agentId.messages.$3"
+]
 
 ````
 

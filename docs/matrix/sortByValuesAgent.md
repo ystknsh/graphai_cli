@@ -90,6 +90,7 @@ sortByValues Agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -164,6 +165,29 @@ sortByValues Agent
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.$0",
+  ":agentId.$1",
+  ":agentId.$2",
+  ":agentId.$3"
+]
+
+````
+```json
+
+[
+  ":agentId.$0",
+  ":agentId.$1",
+  ":agentId.$2",
+  ":agentId.$3"
+]
 
 ````
 

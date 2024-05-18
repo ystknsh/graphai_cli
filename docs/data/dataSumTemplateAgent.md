@@ -113,6 +113,7 @@ Returns the sum of input values
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -183,6 +184,37 @@ Returns the sum of input values
     "properties": {}
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId"
+]
+
+````
+```json
+
+[
+  ":agentId"
+]
+
+````
+```json
+
+[
+  ":agentId"
+]
+
+````
+```json
+
+[
+  ":agentId"
+]
 
 ````
 

@@ -196,6 +196,7 @@ bypass agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -381,6 +382,44 @@ bypass agent
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.$0.a"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.$0.a",
+  ":agentId.$0.$1.b",
+  ":agentId.$1.$0.c",
+  ":agentId.$1.$1.d"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.a",
+  ":agentId.$1.b"
+]
+
+````
+```json
+
+[
+  ":agentId.$0.a",
+  ":agentId.$1.b",
+  ":agentId.$2.c",
+  ":agentId.$3.d"
+]
 
 ````
 

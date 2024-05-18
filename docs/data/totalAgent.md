@@ -269,6 +269,7 @@ Returns the sum of input values
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -499,6 +500,63 @@ Returns the sum of input values
     }
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.a"
+]
+
+````
+```json
+
+[
+  ":agentId.a",
+  ":agentId.b",
+  ":agentId.c",
+  ":agentId.d"
+]
+
+````
+```json
+
+[
+  ":agentId.a"
+]
+
+````
+```json
+
+[
+  ":agentId.a"
+]
+
+````
+```json
+
+[
+  ":agentId.a"
+]
+
+````
+```json
+
+[
+  ":agentId.a",
+  ":agentId.b"
+]
+
+````
+```json
+
+[
+  ":agentId.a",
+  ":agentId.b"
+]
 
 ````
 

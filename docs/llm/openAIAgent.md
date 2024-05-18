@@ -49,6 +49,7 @@ Openai Agent
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -65,6 +66,24 @@ Openai Agent
     "properties": {}
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.object",
+  ":agentId.id",
+  ":agentId.choices.$0.message.role",
+  ":agentId.choices.$0.message.content",
+  ":agentId.choices.$0.finish_reason",
+  ":agentId.choices.$0.index",
+  ":agentId.choices.$0.logprobs",
+  ":agentId.created",
+  ":agentId.model"
+]
 
 ````
 

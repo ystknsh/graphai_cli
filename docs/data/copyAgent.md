@@ -64,6 +64,7 @@ Returns inputs[0]
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -110,6 +111,24 @@ Returns inputs[0]
     "properties": {}
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.color",
+  ":agentId.model"
+]
+
+````
+```json
+
+[
+  ":agentId"
+]
 
 ````
 

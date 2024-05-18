@@ -50,6 +50,7 @@ This agent strip one long string into chunks using following parameters
 ````
 
 ### Schema
+
 #### inputs
 
 ```json
@@ -66,6 +67,29 @@ This agent strip one long string into chunks using following parameters
     "properties": {}
   }
 }
+
+````
+
+### Input Format
+
+```json
+
+[
+  ":agentId.contents.$0",
+  ":agentId.contents.$1",
+  ":agentId.contents.$2",
+  ":agentId.contents.$3",
+  ":agentId.contents.$4",
+  ":agentId.contents.$5",
+  ":agentId.contents.$6",
+  ":agentId.contents.$7",
+  ":agentId.contents.$8",
+  ":agentId.contents.$9",
+  ":agentId.contents.$10",
+  ":agentId.count",
+  ":agentId.chunkSize",
+  ":agentId.overlap"
+]
 
 ````
 
