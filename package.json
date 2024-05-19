@@ -33,13 +33,13 @@
     "@types/json-schema-generator": "^2.0.3",
     "@types/node": "^20.8.7",
     "@types/yargs": "^17.0.32",
-    "eslint": "^9.2.0",
-    "prettier": "^3.0.3",
-    "ts-node": "^10.9.1",
+    "eslint": "^9.3.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
     "tsc-alias": "^1.8.8",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.4.3",
-    "typescript-eslint": "^7.8.0"
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.9.0"
   },
   "dependencies": {
     "@inquirer/prompts": "^5.0.0",

@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import { GraphAI } from "graphai";
-import { AgentFunctionInfoDictonary } from "graphai/lib/type";
 import * as packages from "graphai/lib/experimental_agents";
 import "dotenv/config";
 
