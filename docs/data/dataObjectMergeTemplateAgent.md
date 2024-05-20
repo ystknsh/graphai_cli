@@ -377,6 +377,7 @@ Merge object
 ```json
 
 [
+  ":agentId",
   ":agentId.content1",
   ":agentId.content2"
 ]
@@ -385,6 +386,7 @@ Merge object
 ```json
 
 [
+  ":agentId",
   ":agentId.content1"
 ]
 
@@ -392,6 +394,7 @@ Merge object
 ```json
 
 [
+  ":agentId",
   ":agentId.content"
 ]
 
@@ -399,6 +402,7 @@ Merge object
 ```json
 
 [
+  ":agentId",
   ":agentId.a",
   ":agentId.b",
   ":agentId.c"
@@ -408,8 +412,17 @@ Merge object
 ```json
 
 [
+  ":agentId",
+  ":agentId.a",
+  ":agentId.a.b",
+  ":agentId.a.b.c",
   ":agentId.a.b.c.d",
+  ":agentId.b",
+  ":agentId.b.c",
+  ":agentId.b.c.d",
   ":agentId.b.c.d.e",
+  ":agentId.b.d",
+  ":agentId.b.d.e",
   ":agentId.b.d.e.f"
 ]
 

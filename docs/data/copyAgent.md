@@ -119,6 +119,7 @@ Returns inputs[0]
 ```json
 
 [
+  ":agentId",
   ":agentId.color",
   ":agentId.model"
 ]

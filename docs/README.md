@@ -1,3 +1,6 @@
+## embedding
+### [stringEmbeddingsAgent](./embedding/stringEmbeddingsAgent.md)
+
 ## string
 ### [stringSplitterAgent](./string/stringSplitterAgent.md)
 ### [stringTemplateAgent](./string/stringTemplateAgent.md)

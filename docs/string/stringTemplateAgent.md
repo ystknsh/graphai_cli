@@ -258,6 +258,7 @@ Template agent
 ```json
 
 [
+  ":agentId",
   ":agentId.$0",
   ":agentId.$1"
 ]
@@ -266,6 +267,7 @@ Template agent
 ```json
 
 [
+  ":agentId",
   ":agentId.apple",
   ":agentId.lemon"
 ]
@@ -274,6 +276,8 @@ Template agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.$0",
   ":agentId.$0.apple",
   ":agentId.$0.lemon"
 ]
@@ -282,7 +286,9 @@ Template agent
 ```json
 
 [
+  ":agentId",
   ":agentId.apple",
+  ":agentId.lemon",
   ":agentId.lemon.$0"
 ]
 

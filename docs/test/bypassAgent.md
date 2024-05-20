@@ -390,6 +390,8 @@ bypass agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.$0",
   ":agentId.$0.a"
 ]
 
@@ -397,9 +399,16 @@ bypass agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.$0",
+  ":agentId.$0.$0",
   ":agentId.$0.$0.a",
+  ":agentId.$0.$1",
   ":agentId.$0.$1.b",
+  ":agentId.$1",
+  ":agentId.$1.$0",
   ":agentId.$1.$0.c",
+  ":agentId.$1.$1",
   ":agentId.$1.$1.d"
 ]
 
@@ -407,7 +416,10 @@ bypass agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.$0",
   ":agentId.$0.a",
+  ":agentId.$1",
   ":agentId.$1.b"
 ]
 
@@ -415,9 +427,14 @@ bypass agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.$0",
   ":agentId.$0.a",
+  ":agentId.$1",
   ":agentId.$1.b",
+  ":agentId.$2",
   ":agentId.$2.c",
+  ":agentId.$3",
   ":agentId.$3.d"
 ]
 

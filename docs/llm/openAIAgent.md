@@ -74,8 +74,12 @@ Openai Agent
 ```json
 
 [
+  ":agentId",
   ":agentId.object",
   ":agentId.id",
+  ":agentId.choices",
+  ":agentId.choices.$0",
+  ":agentId.choices.$0.message",
   ":agentId.choices.$0.message.role",
   ":agentId.choices.$0.message.content",
   ":agentId.choices.$0.finish_reason",

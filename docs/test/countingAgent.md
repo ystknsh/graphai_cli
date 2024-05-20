@@ -63,6 +63,8 @@ Counting agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.list",
   ":agentId.list.$0",
   ":agentId.list.$1",
   ":agentId.list.$2",

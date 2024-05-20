@@ -168,8 +168,10 @@ Retrieves JSON data from the specified URL
 ```json
 
 [
+  ":agentId",
   ":agentId.method",
   ":agentId.url",
+  ":agentId.headers",
   ":agentId.headers.x-myHeader",
   ":agentId.body"
 ]
@@ -178,8 +180,10 @@ Retrieves JSON data from the specified URL
 ```json
 
 [
+  ":agentId",
   ":agentId.method",
   ":agentId.url",
+  ":agentId.headers",
   ":agentId.headers.Content-Type",
   ":agentId.body"
 ]

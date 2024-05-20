@@ -75,6 +75,8 @@ This agent strip one long string into chunks using following parameters
 ```json
 
 [
+  ":agentId",
+  ":agentId.contents",
   ":agentId.contents.$0",
   ":agentId.contents.$1",
   ":agentId.contents.$2",

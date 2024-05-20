@@ -98,15 +98,26 @@ Copy2Array agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.$0",
   ":agentId.$0.message",
+  ":agentId.$1",
   ":agentId.$1.message",
+  ":agentId.$2",
   ":agentId.$2.message",
+  ":agentId.$3",
   ":agentId.$3.message",
+  ":agentId.$4",
   ":agentId.$4.message",
+  ":agentId.$5",
   ":agentId.$5.message",
+  ":agentId.$6",
   ":agentId.$6.message",
+  ":agentId.$7",
   ":agentId.$7.message",
+  ":agentId.$8",
   ":agentId.$8.message",
+  ":agentId.$9",
   ":agentId.$9.message"
 ]
 

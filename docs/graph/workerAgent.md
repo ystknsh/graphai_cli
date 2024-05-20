@@ -103,6 +103,7 @@ Map Agent
 ```json
 
 [
+  ":agentId",
   ":agentId.message"
 ]
 
@@ -110,6 +111,7 @@ Map Agent
 ```json
 
 [
+  ":agentId",
   ":agentId.message"
 ]
 

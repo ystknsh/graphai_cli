@@ -126,6 +126,7 @@ Template agent
 ```json
 
 [
+  ":agentId",
   ":agentId.apple",
   ":agentId.lemon"
 ]

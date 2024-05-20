@@ -221,6 +221,8 @@ Pop Agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.array",
   ":agentId.array.$0",
   ":agentId.array.$1",
   ":agentId.item"
@@ -230,6 +232,8 @@ Pop Agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.array",
   ":agentId.array.$0",
   ":agentId.array.$1",
   ":agentId.item"
@@ -239,6 +243,8 @@ Pop Agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.array",
   ":agentId.array.$0",
   ":agentId.array.$1",
   ":agentId.item"

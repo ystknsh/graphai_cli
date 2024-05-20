@@ -508,6 +508,7 @@ Returns the sum of input values
 ```json
 
 [
+  ":agentId",
   ":agentId.a"
 ]
 
@@ -515,6 +516,7 @@ Returns the sum of input values
 ```json
 
 [
+  ":agentId",
   ":agentId.a",
   ":agentId.b",
   ":agentId.c",
@@ -525,6 +527,7 @@ Returns the sum of input values
 ```json
 
 [
+  ":agentId",
   ":agentId.a"
 ]
 
@@ -532,6 +535,7 @@ Returns the sum of input values
 ```json
 
 [
+  ":agentId",
   ":agentId.a"
 ]
 
@@ -539,6 +543,7 @@ Returns the sum of input values
 ```json
 
 [
+  ":agentId",
   ":agentId.a"
 ]
 
@@ -546,6 +551,7 @@ Returns the sum of input values
 ```json
 
 [
+  ":agentId",
   ":agentId.a",
   ":agentId.b"
 ]
@@ -554,6 +560,7 @@ Returns the sum of input values
 ```json
 
 [
+  ":agentId",
   ":agentId.a",
   ":agentId.b"
 ]

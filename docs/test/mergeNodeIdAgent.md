@@ -70,6 +70,7 @@ merge node id agent
 ```json
 
 [
+  ":agentId",
   ":agentId.message",
   ":agentId.test"
 ]

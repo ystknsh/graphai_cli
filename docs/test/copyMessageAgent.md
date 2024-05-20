@@ -63,6 +63,8 @@ CopyMessage agent
 ```json
 
 [
+  ":agentId",
+  ":agentId.messages",
   ":agentId.messages.$0",
   ":agentId.messages.$1",
   ":agentId.messages.$2",
