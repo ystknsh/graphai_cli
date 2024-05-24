@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
+import "dotenv/config";
 import { GraphAI } from "graphai";
 import * as packages from "graphai/lib/experimental_agents";
-import "dotenv/config";
 
 import fs from "fs";
 import path from "path";
