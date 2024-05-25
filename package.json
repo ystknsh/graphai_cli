@@ -1,6 +1,6 @@
 {
   "name": "@receptron/graphai_cli",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "GraphAI command line tools.",
   "main": "lib/graphai_cli.js",
   "bin": {
@@ -42,12 +42,13 @@
     "typescript-eslint": "^7.9.0"
   },
   "dependencies": {
+    "@graphai/agents": "^0.0.1",
     "@inquirer/prompts": "^5.0.0",
     "arxiv-api-ts": "^1.0.3",
     "deepmerge": "^4.3.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "graphai": "^0.4.4",
+    "graphai": "^0.4.5",
     "groq-sdk": "^0.3.3",
     "json-schema-generator": "^2.0.6",
     "openai": "^4.12.4",

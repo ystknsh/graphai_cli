@@ -2,7 +2,7 @@
 
 import "dotenv/config";
 import { GraphAI } from "graphai";
-import * as packages from "graphai/lib/experimental_agents";
+import * as packages from "@graphai/agents";
 
 import fs from "fs";
 import path from "path";

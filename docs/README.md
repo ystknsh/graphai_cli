@@ -1,3 +1,28 @@
+## input
+### [textInputAgent](./input/textInputAgent.md)
+
+## data
+### [dataObjectMergeTemplateAgent](./data/dataObjectMergeTemplateAgent.md)
+### [totalAgent](./data/totalAgent.md)
+### [dataSumTemplateAgent](./data/dataSumTemplateAgent.md)
+### [propertyFilterAgent](./data/propertyFilterAgent.md)
+### [copyAgent](./data/copyAgent.md)
+
+## llm
+### [groqAgent](./llm/groqAgent.md)
+### [slashGPTAgent](./llm/slashGPTAgent.md)
+### [openAIAgent](./llm/openAIAgent.md)
+### [anthropicAgent](./llm/anthropicAgent.md)
+### [geminiAgent](./llm/geminiAgent.md)
+
+## service
+### [fetchAgent](./service/fetchAgent.md)
+### [wikipediaAgent](./service/wikipediaAgent.md)
+
+## sleeper
+### [sleeperAgent](./sleeper/sleeperAgent.md)
+### [sleeperAgentDebug](./sleeper/sleeperAgentDebug.md)
+
 ## embedding
 ### [stringEmbeddingsAgent](./embedding/stringEmbeddingsAgent.md)
 
@@ -28,27 +53,3 @@
 ### [nestedAgent](./graph/nestedAgent.md)
 ### [mapAgent](./graph/mapAgent.md)
 ### [workerAgent](./graph/workerAgent.md)
-
-## data
-### [dataObjectMergeTemplateAgent](./data/dataObjectMergeTemplateAgent.md)
-### [totalAgent](./data/totalAgent.md)
-### [dataSumTemplateAgent](./data/dataSumTemplateAgent.md)
-### [propertyFilterAgent](./data/propertyFilterAgent.md)
-### [copyAgent](./data/copyAgent.md)
-
-## sleeper
-### [sleeperAgent](./sleeper/sleeperAgent.md)
-### [sleeperAgentDebug](./sleeper/sleeperAgentDebug.md)
-
-## llm
-### [groqAgent](./llm/groqAgent.md)
-### [slashGPTAgent](./llm/slashGPTAgent.md)
-### [openAIAgent](./llm/openAIAgent.md)
-### [anthropicAgent](./llm/anthropicAgent.md)
-
-## service
-### [fetchAgent](./service/fetchAgent.md)
-### [wikipediaAgent](./service/wikipediaAgent.md)
-
-## input
-### [textInputAgent](./input/textInputAgent.md)

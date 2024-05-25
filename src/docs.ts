@@ -3,7 +3,7 @@ import { debugResultKey } from "graphai/lib/utils/utils";
 
 import jsonSchemaGenerator from "json-schema-generator";
 
-import * as packages from "graphai/lib/experimental_agents";
+import * as packages from "@graphai/agents";
 
 import fs from "fs";
 import path from "path";
