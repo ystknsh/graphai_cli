@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/receptron/graphai_cli#readme",
   "devDependencies": {
-    "@types/express": "^4.17.21",
     "@types/json-schema-generator": "^2.0.3",
     "@types/node": "^20.8.7",
     "@types/yargs": "^17.0.32",
@@ -43,20 +42,9 @@
   },
   "dependencies": {
     "@graphai/agents": "^0.0.1",
-    "@inquirer/prompts": "^5.0.0",
-    "arxiv-api-ts": "^1.0.3",
-    "deepmerge": "^4.3.1",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
     "graphai": "^0.4.5",
-    "groq-sdk": "^0.3.3",
     "json-schema-generator": "^2.0.6",
-    "openai": "^4.12.4",
-    "slashgpt": "^0.0.8",
-    "tiktoken": "^1.0.14",
-    "wikipedia": "^2.1.2",
-    "xml2js": "^0.6.2",
-    "yaml": "^2.3.3",
     "yargs": "^17.7.2"
   },
   "types": "./lib/graphai_cli.d.ts",
